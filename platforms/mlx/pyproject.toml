@@ -1,0 +1,12 @@
+[project]
+name = "mlx-platform"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "huggingface-hub>=1.28.0",
+    "matplotlib>=3.11.1",
+    "mlx>=0.32.2",
+    "mlx-lm>=0.31.3",
+]

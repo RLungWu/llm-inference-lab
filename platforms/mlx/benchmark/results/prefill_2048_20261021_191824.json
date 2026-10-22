@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "model_path": "/Users/liang/Desktop/Project/llm-inference-lab/model",
+    "label": "prefill_2048",
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.31.3",
+    "timestamp": "2026-10-21T11:18:24.745954+00:00",
+    "num_trials": 3,
+    "environment": {
+      "python_version": "3.14.5",
+      "os": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "device": "Device(gpu, 0)",
+      "device_info": {
+        "device_name": "Apple M5",
+        "max_recommended_working_set_size": 19069665280,
+        "memory_size": 25769803776,
+        "architecture": "applegpu_g17g",
+        "max_buffer_length": 14302248960,
+        "resource_limit": 499000
+      }
+    },
+    "prefill_step_size": 2048
+  },
+  "results": [
+    {
+      "prompt_tokens": 2048,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6410.111791512091,
+          "generation_tokens": 128,
+          "generation_tps": 76.9603295665303,
+          "peak_memory_gb": 2.664257838,
+          "active_memory_gb": 1.505294546,
+          "allocator_cache_memory_gb": 0.084982974,
+          "total_time_s": 2.1238166249822825
+        },
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6532.230033184796,
+          "generation_tokens": 128,
+          "generation_tps": 75.93198914720273,
+          "peak_memory_gb": 2.664257838,
+          "active_memory_gb": 1.505294546,
+          "allocator_cache_memory_gb": 0.084975806,
+          "total_time_s": 2.1460934160277247
+        },
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6223.486367443748,
+          "generation_tokens": 128,
+          "generation_tps": 76.18340201931277,
+          "peak_memory_gb": 2.664257838,
+          "active_memory_gb": 1.505294546,
+          "allocator_cache_memory_gb": 0.084962474,
+          "total_time_s": 2.1629873340716586
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 2048.0,
+        "prompt_tps": 6388.609397380213,
+        "generation_tokens": 128.0,
+        "generation_tps": 76.35857357768192,
+        "peak_memory_gb": 2.664257838,
+        "active_memory_gb": 1.505294546,
+        "allocator_cache_memory_gb": 0.08497375133333333,
+        "total_time_s": 2.144299125027222
+      }
+    }
+  ]
+}

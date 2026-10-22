@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "model_path": "../../model",
+    "label": "baseline_memory_reset",
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.31.3",
+    "timestamp": "2026-09-03T10:46:33.622619+00:00",
+    "num_trials": 3,
+    "environment": {
+      "python_version": "3.14.5",
+      "os": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+      "machine": "arm64",
+      "device": "Device(gpu, 0)",
+      "device_info": {
+        "device_name": "Apple M5",
+        "max_recommended_working_set_size": 19069665280,
+        "memory_size": 25769803776,
+        "architecture": "applegpu_g17g",
+        "max_buffer_length": 14302248960,
+        "resource_limit": 499000
+      }
+    }
+  },
+  "results": [
+    {
+      "prompt_tokens": 128,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 128,
+          "prompt_tps": 1360.8503798567897,
+          "generation_tokens": 128,
+          "generation_tps": 77.05813321272343,
+          "peak_memory_gb": 1.653484025,
+          "total_time_s": 1.8995336249936372
+        },
+        {
+          "prompt_tokens": 128,
+          "prompt_tps": 2978.0543194613574,
+          "generation_tokens": 128,
+          "generation_tps": 75.65043864255053,
+          "peak_memory_gb": 1.648073701,
+          "total_time_s": 1.8789398330263793
+        },
+        {
+          "prompt_tokens": 128,
+          "prompt_tps": 2515.918980696147,
+          "generation_tokens": 128,
+          "generation_tps": 76.07627877336567,
+          "peak_memory_gb": 1.672866967,
+          "total_time_s": 1.8764853328466415
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 128.0,
+        "prompt_tps": 2284.941226671431,
+        "generation_tokens": 128.0,
+        "generation_tps": 76.26161687621321,
+        "peak_memory_gb": 1.6581415643333333,
+        "total_time_s": 1.8849862636222194
+      }
+    },
+    {
+      "prompt_tokens": 512,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 512,
+          "prompt_tps": 4968.674882255456,
+          "generation_tokens": 128,
+          "generation_tps": 73.03996991343602,
+          "peak_memory_gb": 2.093936528,
+          "total_time_s": 1.9955089590512216
+        },
+        {
+          "prompt_tokens": 512,
+          "prompt_tps": 5033.324053678764,
+          "generation_tokens": 128,
+          "generation_tps": 75.33260006075318,
+          "peak_memory_gb": 2.093936528,
+          "total_time_s": 1.9507025831844658
+        },
+        {
+          "prompt_tokens": 512,
+          "prompt_tps": 5261.431650061235,
+          "generation_tokens": 128,
+          "generation_tps": 74.79345431050551,
+          "peak_memory_gb": 2.093936528,
+          "total_time_s": 1.9500664588995278
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 512.0,
+        "prompt_tps": 5087.810195331818,
+        "generation_tokens": 128.0,
+        "generation_tps": 74.3886747615649,
+        "peak_memory_gb": 2.093936528,
+        "total_time_s": 1.965426000378405
+      }
+    },
+    {
+      "prompt_tokens": 1024,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 1024,
+          "prompt_tps": 5802.999756434921,
+          "generation_tokens": 128,
+          "generation_tps": 77.55223339316964,
+          "peak_memory_gb": 2.326767958,
+          "total_time_s": 1.9615103749092668
+        },
+        {
+          "prompt_tokens": 1024,
+          "prompt_tps": 5922.6698256526515,
+          "generation_tokens": 128,
+          "generation_tps": 76.82439174587324,
+          "peak_memory_gb": 2.368858456,
+          "total_time_s": 1.948185000102967
+        },
+        {
+          "prompt_tokens": 1024,
+          "prompt_tps": 5916.505915350324,
+          "generation_tokens": 128,
+          "generation_tps": 76.716658866964,
+          "peak_memory_gb": 2.368858456,
+          "total_time_s": 1.95151308295317
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 1024.0,
+        "prompt_tps": 5880.725165812632,
+        "generation_tokens": 128.0,
+        "generation_tps": 77.03109466866896,
+        "peak_memory_gb": 2.35482829,
+        "total_time_s": 1.9537361526551347
+      }
+    },
+    {
+      "prompt_tokens": 2048,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6511.946132649654,
+          "generation_tokens": 128,
+          "generation_tps": 76.64466425215761,
+          "peak_memory_gb": 2.664257838,
+          "total_time_s": 2.1084520001895726
+        },
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6563.629226025422,
+          "generation_tokens": 128,
+          "generation_tps": 75.38522662640965,
+          "peak_memory_gb": 2.664257838,
+          "total_time_s": 2.1074898329097778
+        },
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6539.849759922171,
+          "generation_tokens": 128,
+          "generation_tps": 76.43442178765991,
+          "peak_memory_gb": 2.664257838,
+          "total_time_s": 2.091822083806619
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 2048.0,
+        "prompt_tps": 6538.475039532415,
+        "generation_tokens": 128.0,
+        "generation_tps": 76.15477088874239,
+        "peak_memory_gb": 2.664257838,
+        "total_time_s": 2.10258797230199
+      }
+    }
+  ]
+}

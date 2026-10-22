@@ -1,0 +1,164 @@
+{
+  "metadata": {
+    "model_path": "/Users/liang/Desktop/Project/llm-inference-lab/model",
+    "mlx_version": "0.32.2",
+    "mlx_lm_version": "0.31.3",
+    "git_commit": "dfa60c0",
+    "timestamp": "2026-08-27T05:11:35.496538+00:00",
+    "num_trials": 3
+  },
+  "results": [
+    {
+      "prompt_tokens": 128,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 128,
+          "prompt_tps": 2778.280252189273,
+          "generation_tokens": 128,
+          "generation_tps": 74.27694943579621,
+          "peak_memory_gb": 1.694254349,
+          "total_time_s": 1.9162522910628468
+        },
+        {
+          "prompt_tokens": 128,
+          "prompt_tps": 2817.560222569272,
+          "generation_tokens": 128,
+          "generation_tps": 74.1798221798648,
+          "peak_memory_gb": 1.694254349,
+          "total_time_s": 1.9151499581057578
+        },
+        {
+          "prompt_tokens": 128,
+          "prompt_tps": 2807.877090332575,
+          "generation_tokens": 128,
+          "generation_tps": 76.88748832012558,
+          "peak_memory_gb": 1.694254349,
+          "total_time_s": 1.8463210000190884
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 128.0,
+        "prompt_tps": 2801.2391883637065,
+        "generation_tokens": 128.0,
+        "generation_tps": 75.11475331192887,
+        "peak_memory_gb": 1.6942543490000002,
+        "total_time_s": 1.8925744163958977
+      }
+    },
+    {
+      "prompt_tokens": 512,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 512,
+          "prompt_tps": 5165.668848572939,
+          "generation_tokens": 128,
+          "generation_tps": 77.1342923100868,
+          "peak_memory_gb": 2.093936528,
+          "total_time_s": 1.8858662080019712
+        },
+        {
+          "prompt_tokens": 512,
+          "prompt_tps": 5191.934254063121,
+          "generation_tokens": 128,
+          "generation_tps": 77.44611358559749,
+          "peak_memory_gb": 2.093936528,
+          "total_time_s": 1.8875874590594321
+        },
+        {
+          "prompt_tokens": 512,
+          "prompt_tps": 5249.96735529379,
+          "generation_tokens": 128,
+          "generation_tps": 76.38025234414157,
+          "peak_memory_gb": 2.093936528,
+          "total_time_s": 1.9046284998767078
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 512.0,
+        "prompt_tps": 5202.523485976617,
+        "generation_tokens": 128.0,
+        "generation_tps": 76.98688607994195,
+        "peak_memory_gb": 2.093936528,
+        "total_time_s": 1.892694055646037
+      }
+    },
+    {
+      "prompt_tokens": 1024,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 1024,
+          "prompt_tps": 5855.015453847655,
+          "generation_tokens": 128,
+          "generation_tps": 75.1798166865451,
+          "peak_memory_gb": 2.368858456,
+          "total_time_s": 2.0081971250474453
+        },
+        {
+          "prompt_tokens": 1024,
+          "prompt_tps": 5545.83586711946,
+          "generation_tokens": 128,
+          "generation_tps": 76.14336624764127,
+          "peak_memory_gb": 2.368858456,
+          "total_time_s": 2.002120917197317
+        },
+        {
+          "prompt_tokens": 1024,
+          "prompt_tps": 5846.542538273794,
+          "generation_tokens": 128,
+          "generation_tps": 75.27527849992079,
+          "peak_memory_gb": 2.368858456,
+          "total_time_s": 2.0048942919820547
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 1024.0,
+        "prompt_tps": 5749.131286413637,
+        "generation_tokens": 128.0,
+        "generation_tps": 75.53282047803572,
+        "peak_memory_gb": 2.368858456,
+        "total_time_s": 2.0050707780756056
+      }
+    },
+    {
+      "prompt_tokens": 2048,
+      "generation_tokens": 128,
+      "trials": [
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6355.222156108188,
+          "generation_tokens": 128,
+          "generation_tps": 75.0743760482259,
+          "peak_memory_gb": 2.664257838,
+          "total_time_s": 2.1600984591059387
+        },
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6130.1007620321825,
+          "generation_tokens": 128,
+          "generation_tps": 70.76214073092625,
+          "peak_memory_gb": 2.664257838,
+          "total_time_s": 2.296940000029281
+        },
+        {
+          "prompt_tokens": 2048,
+          "prompt_tps": 6294.26534991074,
+          "generation_tokens": 128,
+          "generation_tps": 73.46885946540911,
+          "peak_memory_gb": 2.664257838,
+          "total_time_s": 2.1912360000424087
+        }
+      ],
+      "avg": {
+        "prompt_tokens": 2048.0,
+        "prompt_tps": 6259.862756017036,
+        "generation_tokens": 128.0,
+        "generation_tps": 73.10179208152043,
+        "peak_memory_gb": 2.664257838,
+        "total_time_s": 2.2160914863925427
+      }
+    }
+  ]
+}
