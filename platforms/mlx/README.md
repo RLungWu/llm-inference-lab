@@ -88,7 +88,9 @@ llm-inference-lab/
 ├── platforms/
 │   ├── mlx/
 │   │   ├── benchmark/
-│   │   │   ├── inference.py   # M1 baseline runner，輸出 JSON
+│   │   │   ├── inference.py    # M1 baseline runner，輸出 JSON
+│   │   │   ├── plot_results.py # M2 圖表
+│   │   │   ├── M2_NOTES.md     # M2 分析與結論
 │   │   │   ├── compare.py      # 比較兩組結果（後續完成）
 │   │   │   └── results/        # benchmark 結果
 │   │   ├── pyproject.toml      # MLX / MLX-LM dependencies
@@ -98,7 +100,7 @@ llm-inference-lab/
 ├── scripts/
 │   └── download_model.py       # 下載本地 MLX 模型
 ├── model/                      # 本地模型，不提交到 Git
-├── plots/                      # M2 圖表（規劃中）
+├── plots/                      # 實驗圖表
 ├── kernels/                    # M4 Metal kernels（規劃中）
 └── README.md
 ```
@@ -162,10 +164,11 @@ platforms/mlx/benchmark/results/baseline_<timestamp>.json
 
 - [x] 確立 Mac + MLX-LM 的研究範圍
 - [x] 建立 M1 baseline runner
-- [ ] 驗證模型與 benchmark runner 可正常執行
-- [ ] 完成 128 / 512 / 1024 / 2048 的 baseline 結果
-- [ ] 將結果整理成 CSV 並繪製 M2 圖表
-- [ ] 寫下對 prefill、decode、KV cache 與 memory 的解釋
+- [x] 驗證模型與 benchmark runner 可正常執行
+- [x] 完成 128 / 512 / 1024 / 2048 的 baseline 結果
+- [x] 繪製 M2 圖表（`plot_results.py` 直接讀 JSON，輸出到 `plots/mlx/`）
+- [x] 寫下對 prefill、decode、KV cache 與 memory 的解釋（[M2_NOTES](benchmark/M2_NOTES.md)）
+- [x] Prefill chunk size 實驗：確認記憶體成長主要來自 prefill 暫存中間結果，而非 KV cache
 - [ ] 開始 RMSNorm microbenchmark
 - [ ] 撰寫第一個 custom Metal kernel
 
